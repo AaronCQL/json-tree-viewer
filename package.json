@@ -1,0 +1,18 @@
+{
+  "name": "json-tree-viewer",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@types/lodash-es": "^4.17.3",
+    "lodash-es": "^4.17.15",
+    "tailwindcss": "^1.4.6",
+    "vue": "^3.0.0-beta.15"
+  },
+  "devDependencies": {
+    "vite": "^1.0.0-beta.1",
+    "@vue/compiler-sfc": "^3.0.0-beta.15"
+  }
+}
