@@ -2,12 +2,17 @@
   <li>
     <div
       @click="toggleOpen"
+      class="relative"
       :class="{ 'cursor-pointer font-bold hover:bg-gray-800': item.children }"
     >
-      <span
-        v-if="item.children"
-        :class="isOpen ? 'closed-symbol' : 'opened-symbol'"
-      />
+      <div class="absolute -ml-4" v-if="item.children">
+        <span v-if="isOpen">
+          &#9662;
+        </span>
+        <span v-else>
+          &#9656;
+        </span>
+      </div>
       {{ label }}
     </div>
     <ul v-show="isOpen" class="ml-6">

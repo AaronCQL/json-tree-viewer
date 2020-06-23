@@ -3,15 +3,3 @@
 @tailwind components;
 
 @tailwind utilities;
-
-.closed-symbol::before {
-  position: absolute;
-  content: "\25BE";
-  margin-left: -15px;
-}
-
-.opened-symbol::before {
-  position: absolute;
-  content: "\25B8";
-  margin-left: -15px;
-}

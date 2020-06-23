@@ -1,8 +1,8 @@
 <template>
   <div
-    class="h-screen w-screen flex flex-row bg-gray-800 font-mono text-gray-100"
+    class="flex flex-wrap bg-gray-800 font-mono text-gray-100"
   >
-    <div class="w-1/2 p-4">
+    <div class="w-screen sm:w-1/2 h-screen p-4">
       <textarea
         v-model="editor"
         spellcheck="false"
@@ -10,7 +10,7 @@
         :class="isValidJson ? 'border-green-600' : 'border-red-600'"
       />
     </div>
-    <div class="w-1/2 p-4">
+    <div class="w-screen sm:w-1/2 h-screen p-4">
       <div
         class="h-full w-full border-4 border-teal-600 rounded p-2 bg-gray-900 overflow-auto"
       >
