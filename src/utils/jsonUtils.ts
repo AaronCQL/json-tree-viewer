@@ -1,4 +1,4 @@
-import map from "lodash-es/map";
+import { map } from "lodash-es";
 
 function getType(variable: unknown): string {
   return Object.prototype.toString
