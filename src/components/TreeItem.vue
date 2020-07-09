@@ -6,16 +6,13 @@
       :class="{ 'cursor-pointer font-bold hover:bg-gray-800': item.children }"
     >
       <div class="absolute -ml-4" v-if="item.children">
-        <span v-if="isOpen">
-          &#9662;
-        </span>
-        <span v-else>
-          &#9656;
+        <span>
+          {{ isOpen ? `&#9662;` : `&#9656;` }}
         </span>
       </div>
       {{ label }}
     </div>
-    <ul v-show="isOpen" class="ml-6">
+    <ul class="list-item" v-show="isOpen">
       <tree-item
         v-for="child in item.children"
         :key="child.key"
@@ -57,4 +54,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.list-item {
+  padding-left: 2ch;
+}
+</style>
